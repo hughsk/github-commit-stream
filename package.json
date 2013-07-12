@@ -1,0 +1,30 @@
+{
+  "name": "github-commit-stream",
+  "version": "0.0.0",
+  "description": "A streaming interface to pull in a list of commits from a GitHub repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hughsk/github-commit-stream.git"
+  },
+  "author": "Hugh Kennedy <hughskennedy@gmail.com> (http://hughskennedy.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "through": "~2.3.4",
+    "async": "~0.2.9",
+    "parse-link-header": "~0.1.0",
+    "request": "~2.22.0"
+  },
+  "readmeFilename": "README.md",
+  "devDependencies": {},
+  "keywords": [
+    "github",
+    "commits",
+    "stream",
+    "list",
+    "history"
+  ]
+}
