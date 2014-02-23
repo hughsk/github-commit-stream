@@ -1,6 +1,6 @@
 {
   "name": "github-commit-stream",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A streaming interface to pull in a list of commits from a GitHub repository",
   "main": "index.js",
   "scripts": {
