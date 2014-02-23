@@ -38,8 +38,9 @@ function createStream(opts) {
   }, function(next) {
     request.get(nextlink, {
       headers: opts.token ? {
-        Authorization: 'token ' + opts.token
-      } : {}
+        'User-Agent': 'github-commit-stream'
+      , 'Authorization': 'token ' + opts.token
+      } : {'User-Agent': 'github-commit-stream'}
     }, function(err, res, body) {
       if (err) return next(err)
 
