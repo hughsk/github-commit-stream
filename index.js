@@ -8,6 +8,8 @@ module.exports = createStream
 
 function createStream(opts) {
   opts = opts || {}
+  opts.host = opts.host || 'api.github.com'
+  opts.pathPrefix = opts.pathPrefix || ''
   if (!opts.user) throw new Error('"user" must be supplied')
   if (!opts.repo) throw new Error('"repo" must be supplied')
 
@@ -22,8 +24,8 @@ function createStream(opts) {
   var lastlink = false
     , nextlink = url.format({
         protocol: 'https'
-      , hostname: 'api.github.com'
-      , pathname: '/repos/' + opts.user + '/' + opts.repo + '/commits'
+      , hostname: opts.host
+      , pathname: opts.pathPrefix + '/repos/' + opts.user + '/' + opts.repo + '/commits'
       , query: options({
           per_page: String(opts.per_page || 30)
         , since: opts.since
