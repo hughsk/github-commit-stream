@@ -13,10 +13,10 @@
   "author": "Hugh Kennedy <hughskennedy@gmail.com> (http://hughskennedy.com/)",
   "license": "MIT",
   "dependencies": {
-    "through": "~2.3.4",
-    "async": "~0.2.9",
-    "parse-link-header": "~0.1.0",
-    "request": "~2.22.0"
+    "async": "^0.9.0",
+    "parse-link-header": "^0.2.0",
+    "request": "^2.49.0",
+    "through": "^2.3.6"
   },
   "readmeFilename": "README.md",
   "devDependencies": {},
