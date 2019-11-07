@@ -16,7 +16,7 @@
     "through": "~2.3.4",
     "async": "~0.2.9",
     "parse-link-header": "~0.1.0",
-    "request": "~2.22.0"
+    "request": "~2.88.0"
   },
   "readmeFilename": "README.md",
   "devDependencies": {},
